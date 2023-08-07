@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="body-container">
+        <!-- <div class="header-container">
+            <h1>welcome to home page</h1>
+        </div> -->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.ejs">
+                    Home
+                </a></li>
+                <li><a href="contact.ejs">
+                    Contact
+                </a></li>
+                
+            </ul>
+
+        </div>
+        
+        <div class="main-content">
+            <div class="input">
+                <form action="admin" method="POST">
+                    <div>
+                        <label class="label" for="programm">add a programming language:</label>
+                    </div>
+                    <input type="text" id="programm" name="title" placeholder="c++">
+                    <button>Add</button>
+                </form>
+            </div>
+            
+            <% if(resp.length > 0){ %>
+                <%for (let res of resp){%>
+                    <div>
+                        <p><%= res.title %></p>
+                    </div>
+                <%} %>
+            </div>
+
+            <%}else{%>
+                <p>no input yet</p>
+           <% }%>
+            
+        
+    </div>
+</body>
+</html>

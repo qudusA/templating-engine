@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body-container{
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100vw; */
+    align-items: center;
+}
+
+.nav-bar{
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-bar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    /* color: azure; */
+}
+
+.nav-bar ul li a{
+    list-style: none;
+    color: azure;
+    text-decoration: none;
+}
+
+.main-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+};
+
+.main-content .input form  div{
+    padding: 2px;
+    border-radius: 2px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.main-content >.input > form >input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.main-content >.input >form > button{
+    padding: 2px;
+    color: white;
+    background-color: blue;
+}
+
+.main-content > div {
+    margin: 5px;
+    /* padding: 5px; */
+
+}
+
+.main-content > div > p{
+    width: 250px;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: aliceblue;
+}
